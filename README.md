@@ -1,47 +1,47 @@
 # Maven-Assignment
 
 
-Q2: Add a Maven dependency and its related repository URL.
+**Q2: Add a Maven dependency and its related repository URL.**
 
 Dependency Added: Apache Commons Lang
-
 Repository URL: https://commons.apache.org/proper/commons-lang/
+Where is it shown : pom.xml(of parent)
 
-Q3: Add a new repository in the pom.xml and use its dependencies.
+
+**Q3: Add a new repository in the pom.xml and use its dependencies.**
 
 Repository Added: Spring Repo
-
 Repository URL: https://repo.spring.io/release/
+Where is it shown : pom.xml(of parent)
 
-Q4: Using JAR plugin, make changes in the pom.xml to make the JAR executable.
+
+**Q4: Using JAR plugin, make changes in the pom.xml to make the JAR executable.**
 
 Maven Plugin Used: Maven JAR Plugin
-
 Main Class Defined: com.ttn.child1.App
-
 Execution Command: java -jar child1/target/child1-1.0-SNAPSHOT.jar
-
 Expected Output: "Hello from Child 1"
+Where is it shown : pom.xml(of child1)
 
-Q5: Differentiate between the different dependency scopes.
+
+**Q5: Differentiate between the different dependency scopes.**
 
 Compile Scope Dependency: org.slf4j:slf4j-api
-
 Runtime Scope Dependency: mysql:mysql-connector-java
-
 Test Scope Dependency: junit:junit
-
 Provided Scope Dependency: javax.servlet:javax.servlet-api
+Where is it shown : pom.xml(of parent)
 
-Q6: Create a multi-module project and package all modules.
+
+**Q6: Create a multi-module project and package all modules.**
 
 Modules Created: child1, child2
-
 Execution Command: mvn clean package
-
 Expected Outcome: JAR files for all modules.
+Where is it shown : pom.xml(of parent)
 
-Referenced URLs
+
+**Referenced URLs**
 
 http://maven.apache.org
 
