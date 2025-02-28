@@ -7,6 +7,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <properties>
+        <!--Java 21 as Compiler for source and target-->
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,11 +16,11 @@
     <url>http://maven.apache.org</url>
 
     <!--Ques-3-->
+    <!-- Adding JitPack repository for fetching dependencies from GitHub -->
     <repositories>
         <repository>
-            <!-- This repository provides Spring-related dependencies -->
-            <id>spring-repo</id>
-            <url>https://repo.spring.io/release/</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
@@ -31,11 +32,11 @@
             <version>3.12.0</version>
         </dependency>
         <!--ques-3-->
-        <!-- Using Spring dependencies from Spring repo -->
+        <!-- Dependency hosted on JitPack (GitHub repository:https://github.com/Krishna-ttn/JitPackDemo) -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.3.20</version>
+            <groupId>com.github.Krishna-ttn</groupId>
+            <artifactId>JitPackDemo</artifactId>
+            <version>-SNAPSHOT</version>
         </dependency>
         <!--Ques-5-->
         <!-- Default scope (compile) -->
@@ -46,6 +47,7 @@
             <version>2.0.7</version>
         </dependency>
         <!-- Runtime scope -->
+        <!--MySQL Connector for database connectivity-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -53,6 +55,7 @@
             <scope>runtime</scope>
         </dependency>
         <!-- Test scope (only available for testing) -->
+        <!--JUnit framework for unit testing-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -60,6 +63,7 @@
             <scope>test</scope>
         </dependency>
         <!-- Provided scope (available during compile but not packaged) -->
+        <!-- Servlet API (required for compilation but not included in the final package) -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -67,6 +71,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <!--Ques-6-->
+    <!-- Defining modules for a multi-module Maven project -->
     <modules>
         <module>child1</module>
         <module>child2</module>
