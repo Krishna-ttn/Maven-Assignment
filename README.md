@@ -10,9 +10,11 @@ Where is it shown : pom.xml(of parent)
 
 **Q3: Add a new repository in the pom.xml and use its dependencies.**
 
-Repository Added: Spring Repo
-Repository URL: https://repo.spring.io/release/
-Where is it shown : pom.xml(of parent)
+Repository Added: JitPack Repository
+Repository URL: https://jitpack.io
+Dependency Used: JitPackDemo from GitHub
+GitHub Repository URL: https://github.com/Krishna-ttn/JitPackDemo
+Where is it shown: pom.xml (of parent module)
 
 
 **Q4: Using JAR plugin, make changes in the pom.xml to make the JAR executable.**
@@ -26,10 +28,10 @@ Where is it shown : pom.xml(of child1)
 
 **Q5: Differentiate between the different dependency scopes.**
 
-Compile Scope Dependency: org.slf4j:slf4j-api
-Runtime Scope Dependency: mysql:mysql-connector-java
-Test Scope Dependency: junit:junit
-Provided Scope Dependency: javax.servlet:javax.servlet-api
+Compile Scope Dependency: org.slf4j:slf4j-api(SLF4J : used for logging)
+Runtime Scope Dependency: mysql:mysql-connector-java(databse connection)
+Test Scope Dependency: junit:junit(used for testing)
+Provided Scope Dependency: javax.servlet:javax.servlet-api (servlet)
 Where is it shown : pom.xml(of parent)
 
 
@@ -37,22 +39,16 @@ Where is it shown : pom.xml(of parent)
 
 Modules Created: child1, child2
 Execution Command: mvn clean package
-Expected Outcome: JAR files for all modules.
-Where is it shown : pom.xml(of parent)
+Expected Outcome: JAR files for all modules.(of child1 and child2)
+Where is it shown :target folder contains the jar files(target folder not uploaded on git as per Instructions) child/target contains child1-1.0-SNAPSHOT.jar
 
 
 **Referenced URLs**
 
 http://maven.apache.org
-
-https://repo.spring.io/release/
-
+https://jitpack.io
 https://commons.apache.org/proper/commons-lang/
-
 http://www.slf4j.org/
-
 https://junit.org/junit4/
-
 https://dev.mysql.com/downloads/connector/j/
-
 https://javaee.github.io/javaee-spec/
