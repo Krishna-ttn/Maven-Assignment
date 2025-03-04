@@ -1,5 +1,9 @@
 # Maven-Assignment
+**Q1: Following parameters are to be considered for exercise submission:
 
+- The complete project has to be submitted.
+- .idea, target directories should be excluded
+- A text file containing the relevant URLs which are referenced and any other documentation.**
 
 **Q2: Add a Maven dependency and its related repository URL.**
 
